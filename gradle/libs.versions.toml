@@ -1,0 +1,14 @@
+# One source of truth for the Gradle build. AGP 9.x is the line that runs on
+# Gradle 9.6+ (Termux packages 9.9.2); keep the wrapper and this value together.
+[versions]
+agp = "9.5.2"
+compileSdk = "35"
+minSdk = "29"
+targetSdk = "35"
+buildTools = "35.0.0"
+java = "17"
+projectVersion = "0.1.0"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
